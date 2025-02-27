@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario de Portátiles</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="inventario-container">
+    <h2>Formulario de Inventario</h2>
+    <a href="/public/ver_ijnventario.html">Ver inventario almacenado</a>
+
+    <form action="/inventario" method="POST">
+      <input type="text" name="marca" placeholder="Marca" required>
+      <input type="number" name="cantidad" placeholder="Cantidad" required>
+      <textarea name="descripcion" placeholder="Descripción" required></textarea>
+      <input type="text" name="tipo_parte" placeholder="Tipo de parte" required>
+      <input type="date" name="fecha_entrega" required>
+      <input type="date" name="fecha_recibida" required>
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+</body>
+</html>

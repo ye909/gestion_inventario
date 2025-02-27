@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ver Inventario</title>
+  <link rel="stylesheet" href="/css/tablas.css">
+</head>
+<body>
+  <div class="inventario-container">
+    <h2>Inventario de Portátiles</h2>
+    
+    <!-- Tabla para mostrar los inventarios -->
+    <table>
+      <thead>
+        <tr>
+          <th>Marca</th>
+          <th>Cantidad</th>
+          <th>Descripción</th>
+          <th>Tipo de Parte</th>
+          <th>Fecha de Entrega</th>
+          <th>Fecha Recibida</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% inventarios.forEach(inventario => { %>
+          <tr>
+            <td><%= inventario.marca %></td>
+            <td><%= inventario.cantidad %></td>
+            <td><%= inventario.descripcion %></td>
+            <td><%= inventario.tipo_parte %></td>
+            <td><%= inventario.fecha_entrega %></td>
+            <td><%= inventario.fecha_recibida %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+
+    <!-- Botón para regresar al formulario -->
+    <a href="/inventario">Agregar Inventario</a>
+  </div>
+</body>
+</html>
