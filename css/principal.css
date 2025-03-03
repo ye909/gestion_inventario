@@ -1,0 +1,95 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f7fb;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #2f3b4c;
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #3c4f66;
+}
+
+/* Barra superior */
+.header {
+    background-color: #3c4f66;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-left h1 {
+    font-size: 24px;
+}
+
+.header-right .user-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header-right .user-btn:hover {
+    background-color: #45a049;
+}
+
+/* Contenido principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+.panel {
+    background-color: #f4f7fb;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.panel h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
